@@ -1,8 +1,8 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY . .
-RUN dotnet restore DungeonLeaderboardAPI.csproj
-RUN dotnet publish DungeonLeaderboardAPI.csproj -c Release -o /app/publish
+RUN dotnet restore dungeonleaderboardAPI/DungeonLeaderboardAPI.csproj
+RUN dotnet publish dungeonleaderboardAPI/DungeonLeaderboardAPI.csproj -c Release -o /app/publish
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app

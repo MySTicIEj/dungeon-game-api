@@ -1,0 +1,6 @@
+@dungeonleaderboardAPI_HostAddress = http://localhost:5285
+
+GET {{dungeonleaderboardAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
